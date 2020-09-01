@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="js/main.js"></script>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/w3.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+
+  <div class="w3-top">
+    <ul class="w3-navbar w3-medium w3-white w3-card-2 w3-left-align w3-animate-top">
+      <li class="w3-hide-medium w3-hide-large w3-black w3-opennav w3-right">
+        <a href="javascript:void(0);" onclick="menu()" class="w3-white">☰</a>
+      </li>
+      <li>
+        <a href="#">Home</a>
+      </li>
+      <li class="w3-hide-small">
+        <a href="event.html">Events</a>
+      </li>
+      <li class="w3-hide-small">
+        <a href="gallery.html">Gallery</a>
+      </li>
+      <li class="w3-hide-small">
+        <a href="placement.html">Placements</a>
+      </li>
+      <li class="w3-hide-small">
+        <a href="admission.html">Admission</a>
+      </li>
+      <li class="w3-hide-small">
+        <a href="contact.html">Contact Us</a>
+      </li>
+      </ul>
+
+    <div id="fullNav" class="w3-hide w3-card-2 w3-hide-large w3-hide-medium">
+
+      <ul class="w3-navbar w3-left-align w3-medium w3-white">
+        <li>
+          <a href="event.html">Events</a>
+        </li>
+        <li>
+          <a href="gallery.html">Gallery</a>
+        </li>
+        <li>
+          <a href="placement.html">Placements</a>
+        </li>
+        <li>
+          <a href="admission.html">Admission</a>
+        </li>
+        <li>
+          <a href="contact.html">Contact Us</a>
+        </li>
+            </ul>
+    </div>
+
+  </div>
+  <br>
+  <br>
+  <div class="w3-container x">
+
+    <div class="w3-card-4 w3-padding card-container bdr">
+      <div class="w3-center">
+        <br>
+        <img src="images/logo.png" class="w3-animate-zoom"/>
+        <br>
+      </div>
+
+      <div>
+        <br>
+        <span class="w3-animate-right">About Manav Rachna University</span>
+        <p class="about w3-animate-left">
+
+        Manav Rachna Educational Institutions (MREI) founded in 1997, has grown to become one of the best educational entities
+        in the country and is recognized for excellence in professional education and research. A brainchild of the Founder
+        Visionary Dr O.P. Bhalla, a renowned educationist and philanthropist, MREI now encompasses a group of the many vibrant,
+        world class institutions. The Institutions and the programs offered by them are given in succeeding paragraphs.
+          <br>
+          Manav Rachna International Institute of Research and Studies, a NAAC accredited ‘A’ grade university, is a continuum of
+          excellence from the Career Institute of Technology and Management (CITM), and was granted ‘Deemed-to be-University’
+          Status under section 3 of the UGC Act 1956. Recently, the university has been awarded 5 Star QS rating for teaching,
+          facilities &amp; employability and an overall rating of 3 stars. It is a visible symbol of knowledge &amp; experience providing
+          high quality education in the fields of Engineering &amp; Technology, Health &amp; Applied Sciences, Management, Computer
+          Applications, Hotel Management, International Programmes, Commerce, Humanities, Media, Architecture, Design and many
+          more.
+      </p>
+
+      </div>
+
+      <div class="image">
+        <img src="images/card_1.jpg" class=" w3-animate-left">
+        <img src="images/card_2.jpg" class=" w3-animate-top">
+        <img src="images/card_3.jpg" class=" w3-animate-bottom">
+        <img src="images/44.jpg" class=" w3-animate-right">
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-container courses">
+   
+    <div class="w3-blue w3-center w3-card-2 course  w3-hover-shadow w3-animate-bottom">
+      <h3>Manav Rachna Dental College</h3>
+      <img src="images/medical.png" class="course-icon"><br>
+      <p> It is the most renowned institute for BDS &amp; MDS (in all Specialties) ...</p>
+      <button class="w3-btn">Read More</button>
+    </div>
+  
+    <div class="w3-green w3-center w3-card-2 course  w3-hover-shadow w3-animate-bottom">
+        <h3>Manav Rachna Engineering College</h3>
+        <img src="images/computer.png" class="course-icon"><br>
+        <p>The college is housed in its self contained integrated campus of ...</p>
+        <button class="w3-btn">Read More</button>
+      </div>
+
+      <div class="w3-red w3-center w3-card-2 course  w3-hover-shadow w3-text-white w3-animate-bottom">
+          <h3>Manav Rachna Humanities College</h3>
+          <img src="images/law.png" class="course-icon"><br>
+          <p>Humanities is a broad academic field under which students study ...</p>
+          <button class="w3-btn">Read More</button>
+        </div>
+
+        <div class="w3-indigo w3-center w3-card-2 course  w3-hover-shadow w3-animate-bottom">
+            <h3>Manav Rachna Business College</h3>
+            <img src="images/business.png" class="course-icon"><br>
+            <p>It has never been so good if you want to be an MBA. A strong uptick ...</p>
+            <button class="w3-btn">Read More</button>
+          </div>
+  </div>
+
+<div class="footer w3-card-4">
+  Design &amp; Developed By: Chandan Kumar
+</div>
+  </div>
+
+  <script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
+    }
+
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      if (n > x.length) { slideIndex = 1 }
+      if (n < 1) { slideIndex = x.length }
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      x[slideIndex - 1].style.display = "block";
+    }
+  </script>
+
+</body>
+
+</html>

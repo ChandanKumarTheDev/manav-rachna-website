@@ -1,0 +1,71 @@
+body {
+	padding: 0px;
+	margin: 0px;
+	background: #b7efff;
+}
+
+label {
+	display: block;
+	margin-bottom: 4px;
+}
+
+h3 {
+	font-weight: bold;
+	color: #333;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+input,
+select {
+	padding-left: 4px;
+	width: 100%;
+	margin-bottom: 1em;
+	height: 30px;
+}
+
+.btn {
+	height: 36px;
+	margin-bottom: 0em;
+}
+
+.form-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-column-gap: 2em;
+}
+
+.footer
+{
+    text-align: center;
+    padding: 20px;
+    background: dodgerblue;
+    color:white;
+}
+
+
+@media (max-width: 700px) {
+	.form-container {
+		grid-template-columns: 1fr;
+    }
+    
+	.container {
+		padding: 0px;
+	}
+}
+
+.container {
+	border-top: 6px solid dodgerblue;
+	border-bottom: 6px solid dodgerblue;
+	padding: 3em;
+	background: #fff;
+	margin: 1em;
+}
+
+h1
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:#333;
+    font-weight: bold;
+	text-decoration: underline;
+	text-align: center;
+}

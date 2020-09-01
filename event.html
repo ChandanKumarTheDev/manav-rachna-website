@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="css/w3.css" />
+    <link rel="stylesheet" href="css/event.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+
+<body>
+
+    <div class="w3-top">
+        <ul class="w3-navbar w3-medium w3-white w3-card-2 w3-left-align w3-animate-top">
+            <li class="w3-hide-medium w3-hide-large w3-black w3-opennav w3-right">
+                <a href="javascript:void(0);" onclick="menu()" class="w3-white">☰</a>
+            </li>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li class="w3-hide-small">
+                <a href="#">Events</a>
+            </li>
+            <li class="w3-hide-small">
+                <a href="gallery.html">Gallery</a>
+            </li>
+            <li class="w3-hide-small">
+                <a href="placement.html">Placements</a>
+            </li>
+            <li class="w3-hide-small">
+                <a href="admission.html">Admission</a>
+            </li>
+            <li class="w3-hide-small">
+                <a href="contact.html">Contact Us</a>
+            </li>
+ 
+        </ul>
+
+        <div id="fullNav" class="w3-hide w3-card-2 w3-hide-large w3-hide-medium">
+
+            <ul class="w3-navbar w3-left-align w3-medium w3-white">
+                <li>
+                    <a href="#">Events</a>
+                </li>
+                <li>
+                    <a href="gallery.html">Gallery</a>
+                </li>
+                <li>
+                    <a href="placement.html">Placements</a>
+                </li>
+                <li>
+                    <a href="admission.html">Admission</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact Us</a>
+                </li>
+             </ul>
+        </div>
+
+    </div>
+    <br>
+    <br>
+
+
+    <div class="w3-container x">
+
+        <div class="events">
+
+            <div class="event-card w3-card-2 w3-hover-shadow w3-animate-left">
+                <img src="images/card_1.jpg"><br>
+                <p class="w3-padding"> 
+                    <label>Quiz on Open Source Tools by FCA</label>     
+                    <label class="date">Organised on 24-Aug-2018</label>             
+                    Faculty of Computer Applications, MRIIRS organised a technical quiz Technocrat-2018 on Live Ware Technologies under the Open Source Technology Club for BCA, B.Sc. IT and MCA students recently. More than 100 students participated in the quiz.
+                </p>
+            </div>
+
+            <div class="event-card w3-card-2 w3-hover-shadow w3-animate-zoom">
+                <img src="images/evt (3).jpg">
+               
+                <p class="w3-padding p">
+                        <label>Workshop in Collaboration with Truechip</label>
+                        <label class="date">Oraganized on 15-Feb-2018</label>
+                        Truechip, the Verification IP specialist, is a leading provider of Design and Verification solutions – which helps in, accelerating design, lowering the cost and the risks associated with the development of your ASIC, FPGA, and SOC.
+                    </p>
+            </div>
+
+
+            <div class="event-card w3-card-2 w3-hover-shadow w3-animate-right">
+                <img src="images/evt (2).jpg"><br>
+                <p class="w3-padding p">
+                        <label>Inter College Technical Event Technoholic 2018</label>
+                        <label class="date">Organized on 17-Feb-2018</label>
+                    Following the rich culture of organizing Technoholic since the last four years, Faculty of Computer Applications (FCA), Manav Rachna International Institute of Research and Studies (MRIIRS) organised an Inter-college Technical Event- ‘TECHNOHOLIC 2018’ on 16th February 2018. 
+                </p>
+            </div>
+
+            <div class="event-card w3-card-2 w3-hover-shadow w3-animate-bottom">
+                <img src="images/evt (1).jpg">
+                <p class="w3-padding">
+                    <label>Independence Day Celebration by FCA</label>
+                    <label class="date">Organised on 16-Aug-2018</label>
+                    Faculty of Computer Applications, MRIIRS celebrated 72nd Independence Day of India in the presence of Dr. N.C. Wadhwa, VC, MRIIRS; Sh. R.K. Arora, Registrar, MRIIRS; Dr. S.S. Tyagi, Dean-FCA; Dr. Shaveta Bhatia, HOD-CA, all the faculty members and students.
+
+                    Ms. Sunita Joshi, Assistant Professor, FCA sang a melodious song “Ae mere vatan ke logo….”. </p>
+            </div>
+
+        </div>
+        <!--events ending-->
+
+    </div>
+
+    <div class="footer w3-card-4">
+            Design &amp; Developed By: Chandan Kumar
+          </div>
+            </div>
+            
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            if (n > x.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = x.length }
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            x[slideIndex - 1].style.display = "block";
+        }
+    </script>
+
+
+</body>
+
+</html>

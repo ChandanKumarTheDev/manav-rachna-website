@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="js/main.js"></script>
+    <script type="text/javascript" src="js/admission.js"></script>
+    <link rel="stylesheet" href="css/w3.css" />
+    <link rel="stylesheet" href="css/admission.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+
+<body>
+
+    <div class="w3-top">
+        <ul class="w3-navbar w3-medium w3-white w3-card-2 w3-left-align w3-animate-top">
+            <li class="w3-hide-medium w3-hide-large w3-black w3-opennav w3-right">
+                <a href="javascript:void(0);" onclick="menu()" class="w3-white">☰</a>
+            </li>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li class="w3-hide-small">
+                <a href="event.html">Events</a>
+            </li>
+            <li class="w3-hide-small">
+                <a href="gallery.html">Gallery</a>
+            </li>
+            <li class="w3-hide-small">
+                <a href="placement.html">Placements</a>
+            </li>
+            <li class="w3-hide-small">
+                <a href="#">Admission</a>
+            </li>
+            <li class="w3-hide-small">
+                <a href="contact.html">Contact Us</a>
+            </li>
+           
+        </ul>
+
+        <div id="fullNav" class="w3-hide w3-card-2 w3-hide-large w3-hide-medium">
+
+            <ul class="w3-navbar w3-left-align w3-medium w3-white">
+                <li>
+                    <a href="event.html">Events</a>
+                </li>
+                <li>
+                    <a href="gallery.html">Gallery</a>
+                </li>
+                <li>
+                    <a href="placement.html">Placements</a>
+                </li>
+                <li>
+                    <a href="#">Admission</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact Us</a>
+                </li>               
+            </ul>
+        </div>
+
+    </div>
+    <br>
+    <br>   <!-- Navigation bar ending-->  
+
+
+    <div class="container w3-container w3-card-4 w3-animate-top">
+
+            <h1>Admission Form</h1>     
+            <form class="form-container">  
+                <div><h3>Personal Info</h3></div><div></div>
+                <div>
+                    <label>Full Name</label>
+                    <input type="text" required="true" id="name">
+                </div>
+
+                <div>
+                    <label>Date of Birth</label>
+                    <input type="date" required="true" id="dob">
+                </div>
+
+                <div>
+                    <label>Phone No</label>
+                    <input type="phone" required="true" id="phone">
+                </div>
+
+                <div>
+                    <label>Email</label>
+                    <input type="text" id="email">
+                </div>
+
+                <div>
+                        <label>Father's Name</label>
+                        <input type="phone" required="true" id="fname">
+                </div>
+    
+                <div>
+                    <label>Father's Mobile No</label>
+                    <input type="text" id="fmnumber">
+                </div>
+
+                <div><h3>Academic Info</h3></div><div></div>
+
+                
+                <div>
+                        <label>Last Attended School Name</label>
+                        <input type="text" id="sclname" required="true">
+                </div>
+    
+                <div>
+                        <label>School Address</label>
+                        <input type="text" required="true" id="scladd">
+                </div>
+
+                <div>
+                        <label>School Recognition</label>
+                        <select  id="sclrecog">
+                            <option>CBSE</option>
+                            <option>ICSE</option>
+                            <option>Haryana Board</option>
+                            <option>Other</option>
+                        </select>
+                </div>
+
+                <div>
+                        <label>Percentage Scored in 12<sup>th</sup> Class</label>
+                        <input type="text" required="true" id="tmarks">
+                </div>
+
+                <div>
+                        <label>Seeking Admission Into</label>
+                        <select id="courses">
+                                <option>B.Tech</option>
+                                <option>BCA</option>
+                                <option>M.Tech</option>
+                                <option>BCA</option>
+                                <option>MCA</option>
+                                <option>MBBS</option>
+                                <option>BBA</option>
+                                <option>MBA</option>                             
+                            </select>
+                </div>
+    
+                <div>                     
+                </div>
+
+                <div>
+                    <input type="submit" value="Submit" class="w3-button w3-blue w3-border btn w3-hover-shadow" onclick="submitData()">
+                </div>
+
+                <div>
+                        <input type="reset" value="Reset" class="w3-button w3-blue w3-border w3-hover-shadow btn">
+                </div>
+
+            </form> 
+    </div>
+
+    <div class="footer w3-card-4">
+            Design &amp; Developed By: Chandan Kumar
+    </div>
+ 
+</body>
+
+</html>

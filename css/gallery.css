@@ -1,0 +1,49 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    background: white;
+}
+
+.footer
+{
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color:white;
+}
+
+.x
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 1em;
+    margin-top:12px;
+    margin-bottom: 2px;  
+}
+
+@media(max-width:768px)
+{
+    .x
+    {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+   
+}
+
+@media(max-width:400px)
+{
+    .x
+    {
+        grid-template-columns: 1fr;
+    }
+   
+}
+
+
+
+img
+{
+    max-width: 100%;
+    box-shadow: 0px 3px 2px 0px #acacac;
+}
+
